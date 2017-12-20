@@ -19,7 +19,7 @@
     ],
     "commands": {
         "run": {
-            "path": "/usr/bin/env",
+            "path": "/usr/bin/bash",
             "interactive": false,
             "name": "Run",
             "description": "Run a command in the environment and exit.",
