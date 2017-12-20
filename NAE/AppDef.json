@@ -19,13 +19,13 @@
     ],
     "commands": {
         "run": {
-            "path": "/usr/bin/bash",
+            "path": "/bin/bash",
             "interactive": false,
             "name": "Run",
             "description": "Run a command in the environment and exit.",
             "parameters": {
-                "command": {
-                    "name": "Command",
+                "-c": {
+                    "name": "bash command",
                     "description": "Command to run",
                     "type": "STR",
                     "positional": true,
