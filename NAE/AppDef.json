@@ -1,0 +1,48 @@
+{
+    "name": "Ubuntu Linux Rclone",
+    "description": "Rclone for copying data around",
+    "author": "Ian Muñoz",
+    "licensed": true,
+    "classifications": [
+        "Software Development",
+        "Software Testing"
+    ],
+    "machines": [
+        "np8*"
+    ],
+    "scale_max": 1,
+    "vault-types": [
+        "FILE",
+        "BLOCK",
+        "BLOCK_ARRAY",
+        "OBJECT"
+    ],
+    "commands": {
+        "run": {
+            "path": "/usr/bin/env",
+            "interactive": false,
+            "name": "Run",
+            "description": "Run a command in the environment and exit.",
+            "parameters": {
+                "command": {
+                    "name": "Command",
+                    "description": "Command to run",
+                    "type": "STR",
+                    "positional": true,
+                    "required": true
+                }
+            }
+        },
+      "Server": {
+      "path": "/sbin/init",
+      "interactive": true,
+      "name": "ssh",
+      "description": "Run a SSH daemon.",
+      "parameters": {}
+      }
+    },
+    "image": {
+        "data":"89504e470d0a1a0a0000000d4948445200000014000000140803000000ba57ed3f0000000467414d410000b18f0bfc6105000000017352474200aece1ce9000000206348524d00007a26000080840000fa00000080e8000075300000ea6000003a98000017709cba513c00000216504c5445fffffffffffffefbf9f8e1d6efbba3ebac8fefbda5f7dccffdf6f2edb398fae9e1fffffff8e8dffffefefffffffbeee7fffdfcfffffffbf0ebf6dbcef8e2d5f2c8b3ebad8fe6926be17b4cdf7342e48b61f1c4afeaa382f8e1d6fffefdf4cebde6936df4d0bffefdfcf2cab7faece5fffdfdf5d4c4e89c78e07646e38357e4895feaa484fffefee07545f1c2acebaa8bf8e0d4f2c5b0f0bca3faeae2f0c1abe58d64df7341f9e7def4d3c3de6e3be9a280fcf4f0eca989f8dfd3f0baa1fcf1ecedb296efbaa1dc652feeb9a0fae9e2e27e51e17a4bf6ddd0edb59bfef9f7f8dfd4efb79cebab8dfaebe3e07849e3865cfdf7f4fefcfbe9a281dc622bf0bfa9fbece5e89974fdf6f2fffffef5d6c7eaa383eba788dd6833f5d7c9f4d2c1dd6934fdf5f2fbece4fcf2ede3875ce28256f3cebddd6832eaa686dd6732f4cfbeefbca4dd6a36f3cbb9f8e4daecb195dc632ce3885df8e2d6f8e1d5faebe4e79670fefaf8f6dccfefbba2dc642de07443eaa787efb89eeba98af7ddd1eba98bf6dbcfebac8ef9e5dcdf7240dc6028edb196f2c5afeeb499efbaa2eeb89fde6c38f7dfd3ecb296f2c7b3db6028f1c3aceeb398f7e0d5e27f52fae9e1e1794ade6d39e07645eaa585f3ccb9e89a74fdf6f3e89c79f2c7b2fcf3efe7946fdc642eefbda6f6dacde17c4ddf7140f2c9b6fcf5f1efbea7f9e6dce48b62efbda4f8e6dcf1c4aee69169f1c5b0fefbf9e58a61e89975fbeee8fae9e0db80950c0000000f74524e530abebebebebebebebed0d0d015151530f4b2e500000001624b47440088051d48000000097048597300000048000000480046c96b3e000001414944415418d36360c00618910013330b2b1b3b072303bf80201408098b888a894b484a4933c8c84284e4e4151495945554d5d4353419b4b47540623ad2ba7a823afa06828646c6260ca666e620410b4b2b6b411d1b5b413d3b7b0706472767a0988bab9bbb87a78e8d97a09eb78f2683af9f7f80606050704868587804503032c8328a41303a2656302e5e2b21112298949ca2c210919a969ea4959129e80b11cccace1164c8cdf3d7d5ce2f2884081615fb95940a3294f994575454565583056b6aeb2ceb0581820d8d4dcd2dad6d2041c1f68ece1a39a06057774f46af4f5f3f5870c244b749400732945a4c9e32b573da74c1e2193367ce8a990df209c39cb9f3e62f58b868b1d292a5e6b362fa03c1823515d34a0597692f5fb172d56aad356bc181c3b06ebd35288cac37ccd9b831001a880c9c5cdc18808187970f03000074845d9ff5608e890000002574455874646174653a63726561746500323031372d31312d32325431303a31333a30382d30383a3030690d6f150000002574455874646174653a6d6f6469667900323031372d31312d32325431303a31333a30362d30383a3030486facf40000000049454e44ae426082",
+        "type": "image/png"
+    }
+}
