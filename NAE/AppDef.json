@@ -8,7 +8,7 @@
         "Software Testing"
     ],
     "machines": [
-        "np8*"
+        "n0"
     ],
     "scale_max": 1,
     "vault-types": [
