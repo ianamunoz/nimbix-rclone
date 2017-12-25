@@ -7,6 +7,7 @@ RUN apt-get -y install curl && \
         https://raw.githubusercontent.com/nimbix/image-common/master/install-nimbix.sh \
         | bash
 
+RUN apt-get install -y parallel
 
 ADD NAE/AppDef.json /etc/NAE/AppDef.json
 
